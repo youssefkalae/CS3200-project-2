@@ -1,0 +1,72 @@
+[
+    {
+      "InvestorID": "unique_id",
+      "Name": "Youssef Kalae",
+      "Affiliation": "Kalae Investments",
+      "Contact Information": {
+        "Email": "youssef.kalae@email.com",
+        "Phone": "123-456-7890"
+      },
+      "Net Worth": "25000000",
+      "Portfolio": [
+        {
+          "StockID": "unique_stock_id",
+          "Ticker": "AAPL",
+          "Quantity": "50",
+          "Average Purchase Price": "150.00"
+        }
+      ],
+      "Transactions": [
+        {
+          "TransactionID": "unique_transaction_id",
+          "StockID": "unique_stock_id",
+          "Transaction Date": "2024-04-01",
+          "Type": "Buy",
+          "Quantity": "10",
+          "Price": "155.00"
+        }
+      ]
+    },
+    {
+      "StockID": "unique_stock_id",
+      "Ticker": "AAPL",
+      "Company Name": "Apple Inc.",
+      "Sector": "Technology",
+      "Current Price": "155.00",
+      "Market Cap": "2T",
+      "Transactions": [
+        {
+          "TransactionID": "unique_transaction_id",
+          "InvestorID": "unique_id"
+        }
+      ]
+    },
+    {
+      "PoliticalFigureID": "unique_political_id",
+      "Name": "Jane Smith",
+      "Position": "Senator",
+      "Political Affiliation": "Independent",
+      "Market Insights": [
+        {
+          "InsightID": "unique_insight_id",
+          "Description": "Predicted increase in renewable energy sector.",
+          "Date": "2024-03-25"
+        }
+      ]
+    },
+    {
+      "TransactionID": "unique_transaction_id",
+      "InvestorID": "unique_id",
+      "StockID": "unique_stock_id",
+      "Transaction Date": "2024-04-01",
+      "Type": "Buy",
+      "Quantity": "10",
+      "Price": "155.00"
+    },
+    {
+      "MarketInsightID": "unique_insight_id",
+      "SourceID": "unique_id_or_unique_political_id",
+      "Description": "Predicted increase in renewable energy sector.",
+      "Date": "2024-03-25"
+    }
+  ]
