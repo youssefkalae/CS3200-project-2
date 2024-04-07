@@ -1,0 +1,72 @@
+[
+    {
+      "InvestorID": "inv_004",
+      "Name": "Alex Johnson",
+      "Affiliation": "Johnson Investment Group",
+      "Contact Information": {
+        "Email": "alex.johnson@investgroup.com",
+        "Phone": "555-678-1234"
+      },
+      "Net Worth": "65000000",
+      "Portfolio": [
+        {
+          "StockID": "stock_011",
+          "Ticker": "MSFT",
+          "Quantity": "200",
+          "Average Purchase Price": "300.00"
+        }
+      ],
+      "Transactions": [
+        {
+          "TransactionID": "txn_007",
+          "StockID": "stock_011",
+          "Transaction Date": "2024-08-10",
+          "Type": "Buy",
+          "Quantity": "20",
+          "Price": "310.00"
+        }
+      ]
+    },
+    {
+      "StockID": "stock_012",
+      "Ticker": "AMZN",
+      "Company Name": "Amazon.com, Inc.",
+      "Sector": "Consumer Goods",
+      "Current Price": "3500.00",
+      "Market Cap": "1.7T",
+      "Transactions": [
+        {
+          "TransactionID": "txn_008",
+          "InvestorID": "inv_005"
+        }
+      ]
+    },
+    {
+      "PoliticalFigureID": "polfig_003",
+      "Name": "Susan Lee",
+      "Position": "Governor",
+      "Political Affiliation": "Liberal Party",
+      "Market Insights": [
+        {
+          "InsightID": "insight_005",
+          "Description": "Healthcare reform will boost pharmaceutical stocks.",
+          "Date": "2024-09-12"
+        }
+      ]
+    },
+    {
+      "TransactionID": "txn_009",
+      "InvestorID": "inv_004",
+      "StockID": "stock_012",
+      "Transaction Date": "2024-08-20",
+      "Type": "Sell",
+      "Quantity": "15",
+      "Price": "3550.00"
+    },
+    {
+      "MarketInsightID": "insight_006",
+      "SourceID": "polfig_003",
+      "Description": "Expected rise in defense spending to affect aerospace stocks.",
+      "Date": "2024-10-01"
+    }
+  ]
