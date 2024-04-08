@@ -7,4 +7,4 @@ const result = await coll.find({ Sector: "Technology", "Current Price": { $gt: 5
 console.log(result);
 
 await client.close();
-  // find Stocks in a specific sector with price greater than 500
+// find Stocks in a specific sector with price greater than 500
