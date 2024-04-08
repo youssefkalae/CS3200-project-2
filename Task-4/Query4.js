@@ -1,8 +1,14 @@
-async function increaseStockQuantity(db, investorId, ticker, increaseBy) {
-    await db.collection('investors').updateOne(
-      { "InvestorID": investorId, "Portfolio.Ticker": ticker },
-      { $inc: { "Portfolio.$.Quantity": increaseBy } }
-    );
-    console.log(`Increased quantity of ${ticker} for investor ${investorId} by ${increaseBy}.`);
-  }
-  // increase the quantity of a specific stock in a portfolio
+import { MongoClient } from 'mongodb';
+
+const investorId = "someInvestorId"; // Replace with the actual InvestorID
+const updateQuery = { "InvestorID": investorId, "Portfolio.Ticker": "AAPL" };
+const updateOperation = { $inc: { "Portfolio.$.Quantity": 10 } };
+
+const client = await MongoClient.connect('mongodb://localhost:27017/');
+const coll = client.db('project2').collection('Investors');
+await coll.updateOne(updateQuery, updateOperation);
+
+console.log(`Increased quantity of AAPL for InvestorID ${investorId} by 10.`);
+
+await client.close();
+// increase the quantity of a specific stock in a portfolio
